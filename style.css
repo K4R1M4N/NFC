@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #000; /* Чёрный фон */
+    color: #fff; /* Белый текст */
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,7 +14,6 @@ body {
 
 h1 {
     font-size: 24px;
-    color: #333;
     margin-bottom: 20px;
 }
 
@@ -32,6 +32,23 @@ img:hover {
     transform: scale(1.05);
 }
 
+#secondButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px; /* Уменьшаем размер текста */
+    cursor: pointer;
+    background-color: #333; /* Тёмный фон кнопки */
+    color: #fff; /* Белый текст */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    width: 30%; /* Ширина кнопки в 3 раза меньше */
+}
+
+#secondButton:hover {
+    background-color: #555; /* Светлее при наведении */
+}
+
 /* Адаптивные стили для мобильных устройств */
 @media (max-width: 600px) {
     h1 {
@@ -42,5 +59,10 @@ img:hover {
         border-width: 3px; /* Уменьшаем толщину рамки */
         max-width: 95%; /* На мобильных картинка занимает 95% ширины */
         max-height: 60vh; /* На мобильных картинка занимает 60% высоты */
+    }
+
+    #secondButton {
+        font-size: 12px; /* Ещё меньше на мобильных */
+        width: 40%; /* Ширина кнопки на мобильных */
     }
 }
