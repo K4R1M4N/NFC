@@ -21,9 +21,11 @@ img {
     cursor: pointer;
     border: 5px solid #333;
     border-radius: 10px;
-    max-width: 100%; /* Картинка не будет шире экрана */
+    max-width: 90%; /* Картинка не будет шире 90% экрана */
+    max-height: 70vh; /* Картинка не будет выше 70% высоты экрана */
     height: auto; /* Сохраняет пропорции */
     transition: transform 0.2s ease;
+    object-fit: contain; /* Сохраняет пропорции без обрезки */
 }
 
 img:hover {
@@ -38,5 +40,7 @@ img:hover {
 
     img {
         border-width: 3px; /* Уменьшаем толщину рамки */
+        max-width: 95%; /* На мобильных картинка занимает 95% ширины */
+        max-height: 60vh; /* На мобильных картинка занимает 60% высоты */
     }
 }
