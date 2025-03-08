@@ -16,10 +16,14 @@ function changeImageAndText() {
         // Меняем текст
         document.getElementById("title").innerText = "Заглушить эту хуйню";
 
+        // Показываем вторую кнопку
+        document.getElementById("secondButton").style.display = "block";
+
         // Устанавливаем флаг, что это вторая картинка
         isSecondImage = true;
-    } else {
-        // Если это вторая картинка, переходим в Telegram
-        window.location.href = "https://t.me/afevrnc";
     }
+}
+
+function redirectToTelegram() {
+    window.location.href = "https://t.me/afevrnc";
 }
