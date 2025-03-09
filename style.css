@@ -21,8 +21,8 @@ img {
     cursor: pointer;
     border: 5px solid #333;
     border-radius: 10px;
-    max-width: 90%; /* Картинка не будет шире 90% экрана */
-    max-height: 70vh; /* Картинка не будет выше 70% высоты экрана */
+    max-width: 30%; /* Картинка в 3 раза меньше */
+    max-height: 30vh; /* Картинка в 3 раза меньше */
     height: auto; /* Сохраняет пропорции */
     transition: transform 0.2s ease;
     object-fit: contain; /* Сохраняет пропорции без обрезки */
@@ -30,23 +30,6 @@ img {
 
 img:hover {
     transform: scale(1.05);
-}
-
-#secondButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 14px; /* Уменьшаем размер текста */
-    cursor: pointer;
-    background-color: #333; /* Тёмный фон кнопки */
-    color: #fff; /* Белый текст */
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.2s ease;
-    width: 30%; /* Ширина кнопки в 3 раза меньше */
-}
-
-#secondButton:hover {
-    background-color: #555; /* Светлее при наведении */
 }
 
 /* Адаптивные стили для мобильных устройств */
@@ -57,12 +40,7 @@ img:hover {
 
     img {
         border-width: 3px; /* Уменьшаем толщину рамки */
-        max-width: 95%; /* На мобильных картинка занимает 95% ширины */
-        max-height: 60vh; /* На мобильных картинка занимает 60% высоты */
-    }
-
-    #secondButton {
-        font-size: 12px; /* Ещё меньше на мобильных */
-        width: 40%; /* Ширина кнопки на мобильных */
+        max-width: 40%; /* На мобильных картинка немного больше */
+        max-height: 40vh; /* На мобильных картинка немного больше */
     }
 }
