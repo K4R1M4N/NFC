@@ -11,19 +11,19 @@ function changeImageAndText() {
         // Меняем картинку на вторую
         imageIndex++; // Увеличиваем индекс на 1
         var newImageSrc = "images/IMG_" + imageIndex + ".png";
-        document.getElementById("hamster").src = newImageSrc;
+        var hamsterImage = document.getElementById("hamster");
+        hamsterImage.src = newImageSrc;
+
+        // Добавляем класс для уменьшения размера
+        hamsterImage.classList.add("second-image");
 
         // Меняем текст
         document.getElementById("title").innerText = "Заглушить эту хуйню";
 
-        // Показываем вторую кнопку
-        document.getElementById("secondButton").style.display = "block";
-
         // Устанавливаем флаг, что это вторая картинка
         isSecondImage = true;
+    } else {
+        // Если это вторая картинка, переходим в Telegram
+        window.location.href = "https://t.me/afevrnc";
     }
-}
-
-function redirectToTelegram() {
-    window.location.href = "https://t.me/afevrnc";
 }
