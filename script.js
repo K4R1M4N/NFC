@@ -23,9 +23,7 @@ function changeImageAndText() {
         // Устанавливаем флаг, что это вторая картинка
         isSecondImage = true;
     } else {
-        // Если это вторая картинка, переходим в Telegram
-        window.location.href = "https:/ /
-www.youtube.com/watch?
-v=dQw4w9WgXcQ";
+        // Если это вторая картинка, перенаправляем на Rickroll
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }
 }
