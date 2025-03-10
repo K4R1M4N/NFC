@@ -24,6 +24,8 @@ function changeImageAndText() {
         isSecondImage = true;
     } else {
         // Если это вторая картинка, переходим в Telegram
-        window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=QoeDkDSCgnL";
+        window.location.href = "https:/ /
+www.youtube.com/watch?
+v=dQw4w9WgXcQ";
     }
 }
