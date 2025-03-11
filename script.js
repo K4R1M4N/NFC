@@ -1,13 +1,29 @@
-// Воспроизводим музыку сразу при загрузке страницы
-document.getElementById("audio").play();
+var imageIndex = 8166; // Начальный индекс картинки
+var isSecondImage = false; // Флаг для отслеживания второй картинки
 
-// Через 3 секунды показываем вторую картинку и меняем текст
-setTimeout(function() {
-    document.getElementById("title").innerText = "Заглушить эту хуйню";
-    document.getElementById("secondImage").style.display = "block";
-}, 3000);
+function changeImageAndText() {
+    var audio = document.getElementById("audio");
+    if (audio.paused) {
+        audio.play();
+    }
 
-// Функция для перехода в Telegram
-function redirectToTelegram() {
-    window.location.href = "https://t.me/afevrnc";
+    if (!isSecondImage) {
+        // Меняем картинку на вторую
+        imageIndex++; // Увеличиваем индекс на 1
+        var newImageSrc = "images/IMG_" + imageIndex + ".png";
+        var hamsterImage = document.getElementById("hamster");
+        hamsterImage.src = newImageSrc;
+
+        // Добавляем класс для уменьшения размера
+        hamsterImage.classList.add("second-image");
+
+        // Меняем текст
+        document.getElementById("title").innerText = "Заглушить эту хуйню";
+
+        // Устанавливаем флаг, что это вторая картинка
+        isSecondImage = true;
+    } else {
+        // Если это вторая картинка, перенаправляем в Telegram
+        window.location.href = "https://t.me/afevrnc";
+    }
 }
