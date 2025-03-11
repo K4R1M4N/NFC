@@ -1,4 +1,4 @@
-var imageIndex = 8166; // Начальный индекс картинки
+var imageIndex = 1; // Начальный индекс картинки (1.png)
 var isSecondImage = false; // Флаг для отслеживания второй картинки
 
 function changeImageAndText() {
@@ -10,7 +10,7 @@ function changeImageAndText() {
     if (!isSecondImage) {
         // Меняем картинку на вторую
         imageIndex++; // Увеличиваем индекс на 1
-        var newImageSrc = "images/IMG_" + imageIndex + ".png";
+        var newImageSrc = "images/" + imageIndex + ".png"; // Путь к новой картинке
         var hamsterImage = document.getElementById("hamster");
         hamsterImage.src = newImageSrc;
 
