@@ -4,7 +4,7 @@ var isSecondImage = false; // Флаг для отслеживания втор�
 function changeImageAndText() {
     var audio = document.getElementById("audio");
     if (audio.paused) {
-        audio.play();
+        audio.play(); // Запускаем музыку при первом нажатии
     }
 
     if (!isSecondImage) {
