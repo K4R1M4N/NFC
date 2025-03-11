@@ -17,10 +17,16 @@ function changeImageAndText() {
         hamsterImage.classList.add("second-image");
 
         // Меняем текст
-        document.getElementById("title").innerText = "Заглушить этот шедевр";
+        document.getElementById("title").innerText = "Заглушить эту хуйню";
 
         // Устанавливаем флаг, что это вторая картинка
         isSecondImage = true;
+
+        // Делаем картинку не кликабельной на 2 секунды
+        hamsterImage.style.pointerEvents = "none"; // Отключаем клики
+        setTimeout(function() {
+            hamsterImage.style.pointerEvents = "auto"; // Включаем клики через 2 секунды
+        }, 2000);
     } else {
         // Если это вторая картинка, перенаправляем в Telegram
         window.location.href = "https://t.me/afevrnc";
