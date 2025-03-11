@@ -17,7 +17,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-img {
+#secondImage {
     cursor: pointer;
     border: 5px solid #fff; /* Белая рамка */
     border-radius: 10px;
@@ -28,13 +28,7 @@ img {
     object-fit: contain; /* Сохраняет пропорции без обрезки */
 }
 
-/* Стили для второй картинки (в 3 раза меньше) */
-img.second-image {
-    max-width: 30%; /* Ширина в 3 раза меньше */
-    max-height: 30vh; /* Высота в 3 раза меньше */
-}
-
-img:hover {
+#secondImage:hover {
     transform: scale(1.05);
 }
 
@@ -44,15 +38,9 @@ img:hover {
         font-size: 20px; /* Уменьшаем размер заголовка */
     }
 
-    img {
+    #secondImage {
         border-width: 3px; /* Уменьшаем толщину рамки */
         max-width: 95%; /* На мобильных картинка занимает 95% ширины */
         max-height: 60vh; /* На мобильных картинка занимает 60% высоты */
-    }
-
-    /* Адаптивные стили для второй картинки на мобильных */
-    img.second-image {
-        max-width: 40%; /* Ширина в 3 раза меньше */
-        max-height: 40vh; /* Высота в 3 раза меньше */
     }
 }
