@@ -26,6 +26,6 @@ function changeImageAndText() {
         }, 2000);
     } else {
         // Если это вторая картинка, перенаправляем в Telegram
-        window.location.href = "https://t.me=afevrnc"; // Ссылка для открытия в приложении
+        window.location.href = "https://t.me/afevrnc"; // Ссылка для открытия в приложении
     }
 }
