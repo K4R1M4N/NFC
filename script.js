@@ -17,7 +17,7 @@ function changeImageAndText() {
         hamsterImage.classList.add("second-image");
 
         // Меняем текст
-        document.getElementById("title").innerText = "Заглушить эту хуйню";
+        document.getElementById("title").innerText = "Заглушить этот шедевр";
 
         // Устанавливаем флаг, что это вторая картинка
         isSecondImage = true;
