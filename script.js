@@ -9,8 +9,7 @@ function changeImageAndText() {
 
     if (!isSecondImage) {
         // Меняем картинку на вторую
-        imageIndex++; // Увеличиваем индекс на 1
-        var newImageSrc = "images/" + imageIndex + ".png"; // Путь к новой картинке
+        var newImageSrc = "images/last.pic." + imageIndex + ".png"; // Путь к второй картинке
         var hamsterImage = document.getElementById("hamster");
         hamsterImage.src = newImageSrc;
 
