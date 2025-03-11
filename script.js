@@ -24,6 +24,6 @@ function changeImageAndText() {
         isSecondImage = true;
     } else {
         // Если это вторая картинка, перенаправляем на Rickroll
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        window.location.href = "https://t.me/afevrnc";
     }
 }
