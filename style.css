@@ -17,7 +17,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-#secondImage {
+img {
     cursor: pointer;
     border: 5px solid #fff; /* Белая рамка */
     border-radius: 10px;
@@ -28,7 +28,7 @@ h1 {
     object-fit: contain; /* Сохраняет пропорции без обрезки */
 }
 
-#secondImage:hover {
+img:hover {
     transform: scale(1.05);
 }
 
@@ -38,7 +38,7 @@ h1 {
         font-size: 20px; /* Уменьшаем размер заголовка */
     }
 
-    #secondImage {
+    img {
         border-width: 3px; /* Уменьшаем толщину рамки */
         max-width: 95%; /* На мобильных картинка занимает 95% ширины */
         max-height: 60vh; /* На мобильных картинка занимает 60% высоты */
