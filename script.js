@@ -1,4 +1,4 @@
-var imageIndex = 2; // Начальный индекс картинки (1.png)
+var imageIndex = 2; // Начальный индекс картинки (last.pic.1.png)
 var isSecondImage = false; // Флаг для отслеживания второй картинки
 
 function changeImageAndText() {
