@@ -13,11 +13,8 @@ function changeImageAndText() {
         var hamsterImage = document.getElementById("hamster");
         hamsterImage.src = newImageSrc;
 
-        // Добавляем класс для уменьшения размера
-        hamsterImage.classList.add("second-image");
-
         // Меняем текст
-        document.getElementById("title").innerText = "Нажми,чтобы\nзаглушить этот шедевр";
+        document.getElementById("title").innerText = "Нажми, чтобы заглушить\nэтот шедевр";
 
         // Устанавливаем флаг, что это вторая картинка
         isSecondImage = true;
@@ -29,6 +26,6 @@ function changeImageAndText() {
         }, 2000);
     } else {
         // Если это вторая картинка, перенаправляем в Telegram
-        window.location.href = "https://t.me/afevrnc";
+        window.location.href = "tg://resolve?domain=afevrnc"; // Ссылка для открытия в приложении
     }
 }
